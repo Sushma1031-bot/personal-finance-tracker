@@ -9,15 +9,17 @@ export function errorHandler(
   err: unknown,
   req: Request,
   res: Response,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   _next: NextFunction,
 ): void {
   const message = err instanceof Error ? err.message : "Internal server error";
   const status = (err as { status?: number }).status ?? 500;
 
-  req.log.error({ err, status }, "Unhandled error");
+  // Use the logger directly instead of req.log
+  logger.error({ err, status }, "Unhandled error");
 
   if (res.headersSent) return;
 
-  res.status(status).json({ error: status >= 500 ? "Internal server error" : message });
+  res.status(status).json({
+    error: status >= 500 ? "Internal server error" : message,
+  });
 }
