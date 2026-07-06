@@ -1,0 +1,217 @@
+Build a complete full-stack Personal Finance Tracker web application with a premium, modern UI and production-quality code.
+
+Tech Stack:
+- React (Vite)
+- Tailwind CSS
+- Node.js
+- Express.js
+- MongoDB with Mongoose
+- JWT Authentication
+- Axios
+- Recharts for analytics
+- Framer Motion for animations
+- React Router
+
+Requirements:
+
+Authentication
+- User Registration
+- User Login
+- JWT authentication
+- Password hashing using bcrypt
+- Protected routes
+- Logout
+
+Dashboard
+- Beautiful responsive dashboard
+- Welcome message
+- Total Expenses
+- Monthly Expenses
+- Remaining Budget
+- Total Transactions
+- Highest Spending Category
+- Recent Transactions
+- Budget Progress Card
+- Quick Add Expense button
+
+Expense Management
+- Add Expense
+- Edit Expense
+- Delete Expense
+- Expense Fields:
+  - Amount
+  - Category
+  - Date
+  - Description
+- Store expenses in MongoDB
+- Validation for all fields
+
+Categories
+Default categories:
+- Food
+- Transport
+- Shopping
+- Bills
+- Entertainment
+- Education
+- Medical
+- Rent
+- Salary
+- Others
+
+Analytics
+Create a dedicated Analytics page with:
+- Pie Chart (Expenses by Category)
+- Bar Chart (Category Comparison)
+- Line Chart (Monthly Expense Trend)
+- Monthly Summary Cards
+- Highest Spending Category
+- Average Daily Spending
+
+Budget
+- User can set monthly budget
+- Budget progress bar
+- Remaining Budget
+- Alert when budget exceeds
+- Dashboard budget widget
+
+Filtering
+- Search expenses
+- Filter by category
+- Filter by month
+- Sort by newest
+- Sort by oldest
+- Sort by highest amount
+- Sort by lowest amount
+
+Expense History
+Display all expenses in a responsive table.
+Columns:
+- Date
+- Category
+- Description
+- Amount
+- Edit
+- Delete
+
+UI Requirements
+- Premium fintech-inspired design
+- Fully responsive
+- Mobile friendly
+- Dark Mode
+- Light Mode
+- Smooth animations using Framer Motion
+- Loading animations
+- Empty state illustrations
+- Modern cards
+- Rounded components
+- Professional typography
+- Consistent spacing
+- Beautiful color palette
+
+Pages
+- Login
+- Register
+- Dashboard
+- Add Expense
+- Analytics
+- Expense History
+- Settings
+- Profile
+- 404 Page
+
+Settings
+- Change Name
+- Change Password
+- Monthly Budget
+- Theme Toggle
+
+Backend
+Create REST APIs for:
+Authentication
+Expenses CRUD
+Budget CRUD
+Analytics
+User Profile
+
+Use MVC architecture:
+controllers/
+models/
+routes/
+middleware/
+config/
+
+Database Collections:
+Users
+Expenses
+Budgets
+
+Security
+- JWT Middleware
+- Input Validation
+- Error Handling
+- Environment Variables
+- Secure Password Storage
+
+Folder Structure
+
+expense-tracker/
+│
+├── client/
+│ ├── components/
+│ ├── pages/
+│ ├── hooks/
+│ ├── context/
+│ ├── services/
+│ ├── layouts/
+│ ├── assets/
+│ └── App.jsx
+│
+├── server/
+│ ├── controllers/
+│ ├── models/
+│ ├── routes/
+│ ├── middleware/
+│ ├── config/
+│ ├── utils/
+│ └── server.js
+│
+└── README.md
+
+Create reusable React components.
+
+Use Context API for authentication.
+
+Use Axios interceptors for JWT tokens.
+
+Create custom hooks where appropriate.
+
+Use clean and maintainable code.
+
+Do not use dummy data.
+
+Everything should work with MongoDB.
+
+Generate production-ready code with proper comments.
+
+Finally create a professional README.md containing:
+- Project Overview
+- Features
+- Tech Stack
+- Folder Structure
+- Installation Steps
+- Environment Variables
+- Screenshots placeholder
+- Deployment Guide
+- Future Improvements
+
+Ensure the project runs successfully using:
+Frontend:
+npm install
+npm run dev
+
+Backend:
+npm install
+npm run dev
+
+No placeholder pages. Every page should be functional.
